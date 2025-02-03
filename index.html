@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Valentine’s message -->
+        <h1 id="valentineMessage">"I was wondering, will you be my Valentine?"🐽 
+        </h1>
+        
+        <!-- Play button to start music -->
+        <button onclick="playMusic()">Play Music</button>
+
+        <!-- Volume slider -->
+        <div class="controls">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+
+        <!-- Yes/No buttons -->
+        <div class="response-buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+
+        <!-- Hidden Love Message -->
+        <div id="loveMessage" class="hidden">
+            <h2>I LOVE YOU 💕</h2>
+        </div>
+
+        <!-- Fireworks container -->
+        <div id="fireworks-container" class="hidden"></div>
+    </div>
+
+    <!-- Updated to the new song -->
+    <audio id="audio" loop>
+        <source src="HoldMeDown_DanielCaesar.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
