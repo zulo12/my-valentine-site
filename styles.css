@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('meandelma.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#hiddenMessage {
+    display: none;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
